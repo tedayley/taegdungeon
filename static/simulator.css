@@ -1,0 +1,95 @@
+body {
+   background-color:darkslategray;
+   color: white;
+}
+
+.row{
+   margin: auto;
+}
+
+.list-group-item{
+   cursor: pointer;
+}
+
+.list-group-item:hover { 
+   border: 5px solid #50C878
+}
+
+#Banner {
+   font: 50px/60px bold;
+    background-color: midnightblue;
+    color: springgreen;
+}
+
+#NavBar {
+   margin: auto;
+   padding-top: 10px;
+}
+
+.NavTab {
+   text-align: center; 
+   background-color: blue;
+   color: white;
+   border: 2px solid darkblue;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   font: 25px/35px Bold;
+   cursor: pointer;
+}
+
+.ActiveTab {
+   background-color: #6c757d!important;
+   border-bottom: 0px;
+}
+
+.NavTab:hover {
+   background-color: limegreen;
+}
+
+#fightsim {
+   text-align: center;
+}
+
+#battle_messages {
+   height: 90%;
+   background-color: black;
+   color: green;
+}
+
+#back_to_character_list, #back_to_team_list, #back_to_battle_list {
+   display: none;
+}
+
+.v_msg {
+   color: red;
+   font-style: italic;
+   font-weight: bold;
+}
+
+canvas {
+   background-color: #212529; 
+ }
+
+.resultDiv {
+    min-width: 400px;
+}
+
+.statCard {
+   max-height: 90%;
+} 
+
+@media only screen and (max-device-width: 568px)
+{
+   #back_to_character_list, #back_to_team_list, #back_to_battle_list {
+      display: inline-block;
+   }
+   .isactive {
+      display: flex;
+   }
+   .isinactive {
+      display: none;
+   }
+   .statCard {
+       min-width: 90%;
+   }   
+}
