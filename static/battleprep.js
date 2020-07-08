@@ -38,7 +38,7 @@ class Battle{
         response.then(function(response){
             for(let index in response){
                 let character = response[index];              
-                if(!BattleInfo.teams.includes(character.team)){
+                if(character.team.length && !BattleInfo.teams.includes(character.team)){
                     BattleInfo.teams.push(character.team);
                 }
             }
